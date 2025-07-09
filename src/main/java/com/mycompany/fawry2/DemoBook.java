@@ -1,13 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.fawry2;
 
-/**
- *
- * @author sama
- */
 public class DemoBook extends Book {
+
+    public DemoBook(String isbn, String title, int publishYear, double price) {
+        super(isbn, title, publishYear, price);
+    }
     
+    @Override
+    public boolean forSale(){
+        return false;
+    }
+    @Override
+    public void deliveryType(String ignored){
+        System.out.println("no delivery");
+    }
 }

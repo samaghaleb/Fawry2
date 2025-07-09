@@ -1,13 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.fawry2;
 
-/**
- *
- * @author sama
- */
 public class EmailService {
+    public static void deliveryType(EBook book , String email){
+        System.out.println("sending "+ book.title + "to "+ email);
+    }
+
     
 }

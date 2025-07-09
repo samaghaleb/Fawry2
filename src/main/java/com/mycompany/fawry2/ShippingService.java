@@ -1,13 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.fawry2;
 
-/**
- *
- * @author sama
- */
 public class ShippingService {
+    public static void deliveryType(PaperBook book , String address){
+        System.out.println("Ship " + book.title + " to "+ address);
+    }
+
+    static void deliveryType(Book book, String address) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }

@@ -1,13 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.fawry2;
 
-/**
- *
- * @author sama
- */
 public class EBook extends Book {
+    public String fileType;
+
+    public EBook(String fileType, String isbn, String title, int publishYear, double price) {
+        super(isbn, title, publishYear, price);
+        this.fileType = fileType;
+    }
     
+    @Override
+    public boolean forSale(){
+        return true;
+    }
+    @Override
+    public void deliveryType(String email){
+        EmailService.deliveryType(this , email);
+    }
 }
